@@ -1,0 +1,19 @@
+{
+  "name": "scent-garden-backend",
+  "version": "1.0.0",
+  "description": "Optional future-use Express API starter for Scent Garden. Note: The live site runs entirely in-browser using IndexedDB and is NOT connected to this backend.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

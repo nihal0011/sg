@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-cream-50 text-sage-950 font-sans antialiased;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Custom Botanical Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF6EE;
+}
+::-webkit-scrollbar-thumb {
+  background: #AEC4B2;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6B8E72;
+}
+
+/* Botanical subtle animations and glassmorphism */
+.glass-panel {
+  background: rgba(253, 250, 245, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(140, 169, 146, 0.2);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #A47D14 0%, #DFB835 50%, #C99D1C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sage-gradient-bg {
+  background: linear-gradient(135deg, #405A45 0%, #2E4132 100%);
+}
